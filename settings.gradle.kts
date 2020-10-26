@@ -3,12 +3,13 @@
  */
 
 rootProject.name = "dashj-parent"
-include(":dashj-core")
-include(":dashj-bls")
-include(":dashj-examples")
-include(":dashj-tools")
-include(":wallettemplate")
-project(":dashj-core").projectDir = file("core")
-project(":dashj-bls").projectDir = file("bls")
-project(":dashj-examples").projectDir = file("examples")
-project(":dashj-tools").projectDir = file("tools")
+
+include("bls")
+include("core")
+include("example")
+include("tools")
+include("wallet-template")
+
+for (project in rootProject.children) {
+    project.projectDir = file("${project.name}")
+}

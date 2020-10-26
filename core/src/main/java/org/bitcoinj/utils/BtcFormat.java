@@ -66,7 +66,7 @@ import java.util.regex.Pattern;
  *   <li>access to character information that allows for vertical
  *       alignment of tabular columns of formatted values.</ol>
  *
- * <h3>Basic Usage</h3>
+ * <h2>Basic Usage</h2>
  *
  * <p>Basic usage is very simple:</p>
  *

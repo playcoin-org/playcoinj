@@ -4,10 +4,10 @@
 
 plugins {
     `java-library`
-    `maven-publish`
 }
 
 repositories {
+    google()
     mavenLocal()
     maven {
         url = uri("https://oss.sonatype.org/content/repositories/snapshots")
@@ -21,17 +21,12 @@ repositories {
 dependencies {
     implementation("org.slf4j:slf4j-api:1.7.28")
     runtimeOnly("org.slf4j:slf4j-jdk14:1.7.28")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.10")
 }
 
 group = "org.dashj"
 version = "0.18-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
-
-publishing {
-    publications.create<MavenPublication>("maven") {
-        from(components["java"])
-    }
-}
 
 tasks.withType<JavaCompile>() {
     options.encoding = "UTF-8"

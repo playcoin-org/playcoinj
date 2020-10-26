@@ -30,7 +30,7 @@ import org.bitcoinj.store.*;
 import org.bitcoinj.wallet.*;
 import org.slf4j.*;
 
-import javax.annotation.*;
+import javax.annotation.Nullable;
 import java.io.*;
 import java.net.*;
 import java.nio.channels.*;
