@@ -6,7 +6,6 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     id("org.dashj.java-conventions")
-    kotlin("jvm") version "1.3.72"
     `java-library`
 }
 
@@ -17,7 +16,6 @@ repositories {
 dependencies {
     implementation(project(":bls"))
     implementation(project(":core"))
-    implementation(kotlin("stdlib-jdk8"))
 //    implementation(kotlin("gradle-plugin:1.4.10"))
     implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.10")
     compile("com.google.protobuf:protobuf-java:3.6.1")

@@ -6,14 +6,12 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     id("org.dashj.java-conventions")
-    kotlin("jvm") version "1.3.72"
 }
 
 dependencies {
     implementation(project(":core"))
     implementation("net.sf.jopt-simple:jopt-simple:5.0.4")
     implementation("com.h2database:h2:1.3.167")
-    implementation(kotlin("stdlib-jdk8"))
     compile("com.google.protobuf:protobuf-java:3.6.1")
     implementation("org.bouncycastle:bcprov-jdk16:1.45")
 }

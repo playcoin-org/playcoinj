@@ -1,16 +1,22 @@
 //import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 //
-//plugins {
+plugins {
 //    // Support convention plugins written in Kotlin. Convention plugins are build scripts in 'src/main' that automatically become available as plugins in the main build.
 //    java
 //    idea
-//    kotlin("jvm") version "1.4.10"
-//}
+    kotlin("jvm") version "1.3.72"
+}
+
+repositories {
+    mavenCentral()
+    gradlePluginPortal()
+}
+
+dependencies{
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.3.72")
+}
+
 //
-//repositories {
-//    mavenCentral()
-//    gradlePluginPortal()
-//}
 //
 //val compileKotlin: KotlinCompile by tasks
 //compileKotlin.kotlinOptions {

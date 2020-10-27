@@ -6,7 +6,6 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     id("org.dashj.java-conventions")
-    kotlin("jvm") version "1.3.72"
 }
 
 repositories {
@@ -14,7 +13,6 @@ repositories {
 }
 dependencies {
     implementation(project(":bls"))
-    implementation(kotlin("stdlib-jdk8"))
     implementation("de.sfuhrm:saphir-hash-core:3.0.5")
     implementation("com.h2database:h2:1.3.167")
     implementation("org.bouncycastle:bcprov-jdk15to18:1.63")

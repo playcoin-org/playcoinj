@@ -6,7 +6,6 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     id("org.dashj.java-conventions")
-    kotlin("jvm") version "1.3.72"
     id("org.openjfx.javafxplugin") version("0.0.8")
 }
 
@@ -21,7 +20,6 @@ repositories {
 
 dependencies {
     implementation(project(":core"))
-    implementation(kotlin("stdlib-jdk8"))
     implementation("org.fxmisc.easybind:easybind:1.0.2")
     implementation("de.jensd:fontawesomefx:8.0.0")
     implementation("net.glxn:qrgen:1.3")
